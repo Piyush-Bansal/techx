@@ -58,58 +58,14 @@
       })(window, document);
     </script>
     <link
-      href="https://uploads-ssl.webflow.com/5d4462a939958fb85d61acc2/5d668b995e626ff19a2a22e3_Favicon.png"
+      href="https://uploads-ssl.webflow.com/5d4462a939958fb85d61acc2/62bac7454236d9460b23b84f_01-favicon.png"
       rel="shortcut icon"
       type="image/x-icon"
     />
     <link
-      href="https://uploads-ssl.webflow.com/5d4462a939958fb85d61acc2/5d668ba5f0c41579933fdc63_webclip.png"
+      href="https://uploads-ssl.webflow.com/5d4462a939958fb85d61acc2/62bac745b04ad7912b1c16d6_02-ios-icon.png"
       rel="apple-touch-icon"
     />
-    <link href="https://www.univ.ai//ghf-copy-3" rel="canonical" />
-    <meta
-      name="facebook-domain-verification"
-      content="1ae5twsz1a8g611kpqhzka2l46bnhv"
-    />
-
-    <!-- anti-flicker snippet (recommended)  -->
-    <style>
-      .async-hide {
-        opacity: 0 !important;
-      }
-    </style>
-    <script>
-      (function (a, s, y, n, c, h, i, d, e) {
-        s.className += " " + y;
-        h.start = 1 * new Date();
-        h.end = i = function () {
-          s.className = s.className.replace(RegExp(" ?" + y), "");
-        };
-        (a[n] = a[n] || []).hide = h;
-        setTimeout(function () {
-          i();
-          h.end = null;
-        }, c);
-        h.timeout = c;
-      })(window, document.documentElement, "async-hide", "dataLayer", 4000, {
-        "GTM-T5SW79T": true,
-      });
-    </script>
-
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-T5SW79T");
-    </script>
-    <!-- End Google Tag Manager -->
 
     <meta name="theme-color" content="#324bd9" />
 
@@ -394,53 +350,6 @@
         }
       }
     </style>
-
-    <!-- Facebook Pixel Code -->
-    <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod
-            ? n.callMethod.apply(n, arguments)
-            : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = "2.0";
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(
-        window,
-        document,
-        "script",
-        "https://connect.facebook.net/en_US/fbevents.js"
-      );
-      fbq("init", "488390719039753");
-      fbq("track", "PageView");
-    </script>
-    <noscript
-      ><img
-        height="1"
-        width="1"
-        style="display: none"
-        src="https://www.facebook.com/tr?id=488390719039753&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Facebook Pixel Code -->
-
-    <!--LeadSquared Tracking Code Start-->
-    <script
-      type="text/javascript"
-      src="https://web-in21.mxradon.com/t/Tracker.js"
-    ></script>
-    <script type="text/javascript">
-      pidTracker("56437");
-    </script>
-    <!--LeadSquared Tracking Code End-->
   </head>
   <body>
     <div
@@ -1134,94 +1043,6 @@
       });
     </script>
 
-    <script>
-      const urlParams = new URLSearchParams(window.location.search);
-      const myParam = urlParams.get("ref");
-      document.cookie = "ref=" + myParam + "; domain=univ.ai; max-age = 604800";
-    </script>
-
-    <script>
-      function getParam(name) {
-        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-          results = regex.exec(location.search);
-        return results === null
-          ? ""
-          : decodeURIComponent(results[1].replace(/\+/g, " "));
-      }
-      var Webflow = Webflow || [];
-      Webflow.push(function () {
-        $("#code").val(getParam("ref"));
-      });
-    </script>
-
-    <script>
-      let intr = document.getElementsByClassName("int");
-      let ind = document.getElementsByClassName("inr");
-      let country = sessionStorage.getItem("country");
-      const api_url = "https://course.univ.ai/cc/";
-
-      //Get user location
-      async function getLocation() {
-        const response = await fetch(api_url);
-        const data = await response.json();
-        country = data.cc;
-        sessionStorage.setItem("country", country);
-        remove(country);
-      }
-
-      //Remove objects
-      function remove(country) {
-        if (country == "IN") {
-          for (var i = 0; i < intr.length; i++) {
-            intr[i].style.display = "none";
-          }
-          for (var i = 0; i < ind.length; i++) {
-            ind[i].style.display = "block";
-            console.log("it is india");
-          }
-        } else {
-          for (var i = 0; i < intr.length; i++) {
-            intr[i].style.display = "block";
-          }
-          for (var i = 0; i < ind.length; i++) {
-            ind[i].style.display = "none";
-          }
-          console.log("it is international");
-        }
-      }
-
-      //Check for country
-      if (country == null) {
-        getLocation();
-      } else {
-        remove(country);
-      }
-    </script>
-
-    <script>
-      $(document).ready(function () {
-        $("#wf-form-Subscription").submit(function () {
-          window.open(
-            "https://drive.google.com/uc?export=download&id=1O0FksyQUKr8uq7XYpP9dzS2Avylz7zUy",
-            "_blank"
-          );
-        });
-      });
-    </script>
-
-    <!-- CUSTOM SELECT FIELD -->
-
-    <script>
-      function SetProspectID() {
-        if (typeof MXCProspectId !== "undefined")
-          jQuery('input[name="ProspectID"]').attr("value", MXCProspectId);
-      }
-
-      window.onload = function () {
-        setTimeout(SetProspectID, 2000);
-      };
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
     <script>
       $(document).ready(function () {
