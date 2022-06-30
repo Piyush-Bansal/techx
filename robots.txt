@@ -1,0 +1,9 @@
+User-Agent:*
+Disallow:/admin/
+Disallow:/welcome
+
+User-agent: Yahoo! Slurp
+
+Allow: /
+
+Sitemap: http://www.techx.ai/sitemap.xml
