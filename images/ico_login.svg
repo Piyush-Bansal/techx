@@ -1,0 +1,18 @@
+<svg width="180" height="100" viewBox="0 0 180 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.290541" y="0.290541" width="179.419" height="99.4189" fill="#E5E5E5" stroke="#1E2029" stroke-width="0.581081"/>
+<rect x="38" y="64" width="40" height="12" fill="#3D32D9"/>
+<rect x="38" y="24" width="104" height="12" fill="white"/>
+<rect x="38" y="42" width="104" height="12" fill="white"/>
+<circle cx="44" cy="48" r="2" fill="#1E2029"/>
+<circle cx="57.9807" cy="48" r="2" fill="#1E2029"/>
+<circle cx="71.9612" cy="48" r="2" fill="#1E2029"/>
+<circle cx="85.9418" cy="48" r="2" fill="#1E2029"/>
+<circle cx="99.9224" cy="48" r="2" fill="#1E2029"/>
+<circle cx="50.9904" cy="48" r="2" fill="#1E2029"/>
+<circle cx="64.9709" cy="48" r="2" fill="#1E2029"/>
+<circle cx="78.9515" cy="48" r="2" fill="#1E2029"/>
+<circle cx="92.9321" cy="48" r="2" fill="#1E2029"/>
+<circle cx="106.913" cy="48" r="2" fill="#1E2029"/>
+<path d="M109 28H42V32H109V28Z" fill="#1E2029"/>
+<rect width="180" height="8" fill="#1E2029"/>
+</svg>

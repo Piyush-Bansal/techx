@@ -1,0 +1,18 @@
+<svg width="180" height="100" viewBox="0 0 180 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="179" height="99" fill="white" stroke="#1E2029"/>
+<path d="M64.8357 86H20V90H64.8357V86Z" fill="#434343"/>
+<path d="M64.8357 24H20V28H64.8357V24Z" fill="#434343"/>
+<path d="M16 14H4V18H16V14Z" fill="#3D32D9"/>
+<path d="M176 14H152V18H176V14Z" fill="#B7B7B7"/>
+<rect x="47" y="28" width="79" height="52" fill="white"/>
+<path d="M96.8357 34H52V37.3149H96.8357V34Z" fill="#434343"/>
+<path d="M79 59H61V62H79V59Z" fill="#434343"/>
+<path d="M79 69H61V72H79V69Z" fill="#434343"/>
+<rect x="53" y="58" width="4" height="4" fill="#434343"/>
+<rect x="53" y="68" width="4" height="4" fill="#434343"/>
+<rect width="180" height="8" fill="#1E2029"/>
+<rect x="20" y="34" width="104" height="12" fill="#586FF1"/>
+<rect x="20" y="50" width="104" height="12" fill="#3D32D9"/>
+<rect x="20" y="66" width="104" height="12" fill="#1D2A73"/>
+<rect x="20" y="96" width="104" height="4" fill="#1E2029"/>
+</svg>

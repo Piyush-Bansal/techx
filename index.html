@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<!-- Last Published: Tue Jun 28 2022 07:50:17 GMT+0000 (Coordinated Universal Time) -->
+<!--  Last Published: Thu Oct 06 2022 19:04:56 GMT+0000 (Coordinated Universal Time)  -->
 <html
-  data-wf-domain="www.univ.ai"
-  data-wf-page="62b54c0bf2efdcaf01dd2bd1"
+  data-wf-page="62dd17dc9b543615593c93e1"
   data-wf-site="5d4462a939958fb85d61acc2"
   lang="en"
 >
@@ -36,17 +35,10 @@
       content="3KhLZnladf7z7E5WEV1DVmcLS6VuQqFtcdwUZRrq5EM"
       name="google-site-verification"
     />
-    <link
-      href="https://uploads-ssl.webflow.com/5d4462a939958fb85d61acc2/css/univ-ai.webflow.96bea1878.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <!--[if lt IE 9
-      ]><script
-        src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
-        type="text/javascript"
-      ></script
-    ><![endif]-->
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="css/webflow.css" rel="stylesheet" type="text/css" />
+    <link href="css/univ-ai.webflow.css" rel="stylesheet" type="text/css" />
+    <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
     <script type="text/javascript">
       !(function (o, c) {
         var n = c.documentElement,
@@ -57,18 +49,38 @@
             (n.className += t + "touch");
       })(window, document);
     </script>
-    <link
-      href="https://uploads-ssl.webflow.com/5d4462a939958fb85d61acc2/62bae196beaf510feb509169_01-favicon.png"
-      rel="shortcut icon"
-      type="image/x-icon"
+    <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="images/webclip.png" rel="apple-touch-icon" />
+    <link href="https://www.univ.ai//ghf-copy-3" rel="canonical" />
+    <meta
+      name="facebook-domain-verification"
+      content="1ae5twsz1a8g611kpqhzka2l46bnhv"
     />
-    <link
-      href="https://uploads-ssl.webflow.com/5d4462a939958fb85d61acc2/62bac745b04ad7912b1c16d6_02-ios-icon.png"
-      rel="apple-touch-icon"
-    />
+    <!--  anti-flicker snippet (recommended)   -->
+    <style>
+      .async-hide {
+        opacity: 0 !important;
+      }
+    </style>
+    <script>
+      (function (a, s, y, n, c, h, i, d, e) {
+        s.className += " " + y;
+        h.start = 1 * new Date();
+        h.end = i = function () {
+          s.className = s.className.replace(RegExp(" ?" + y), "");
+        };
+        (a[n] = a[n] || []).hide = h;
+        setTimeout(function () {
+          i();
+          h.end = null;
+        }, c);
+        h.timeout = c;
+      })(window, document.documentElement, "async-hide", "dataLayer", 4000, {
+        "GTM-T5SW79T": true,
+      });
+    </script>
 
     <meta name="theme-color" content="#324bd9" />
-
     <style>
       /*change the thinkness of the scrollbar here*/
       ::-webkit-scrollbar {
@@ -97,40 +109,34 @@
         width: 0px;
       }
     </style>
-
     <style>
       .calendarContainer::-webkit-scrollbar {
         display: none;
       }
     </style>
-
     <style>
       .calendarContainer {
         overflow-x: scroll;
         -ms-overflow-style: none;
       }
     </style>
-
     <style>
       .filtercontrol::-webkit-scrollbar {
         display: none;
       }
     </style>
-
     <style>
       .filtercontrol {
         overflow-x: scroll;
         -ms-overflow-style: none;
       }
     </style>
-
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"
     />
-
-    <!-- Custom Select Field Styles -->
+    <!--  Custom Select Field Styles  -->
     <style>
       /************ ADD YOUR VALUES BELOW ************/
       :root {
@@ -141,7 +147,6 @@
         --border-color-active: white; /* Active State */
         --border-color-hover: white; /* Select Field could be the same as your form field border color */
         --list-item-bg-color: #ededed; /* Select Field Hover/Focus State */
-
         /* ----------- Spacing ----------- */
         --select-field-padding-left: 16px; /* Match the padding values for your form fields */
         --select-field-padding-right: 16px; /* Match the padding values for your form fields */
@@ -151,11 +156,9 @@
         --list-item-padding-right: 16px;
         --list-item-min-height: 40px; /* This is the height of each list item in the dropdown */
         --list-item-line-height: 40px; /* This is the height of each list item in the dropdown */
-
         /* ^^^  Make sure both "line-height" and "min-height" are the same! ^^^  */
       }
       /************ END OF CUSTOM VALUES ************/
-
       .nice-select {
         -webkit-tap-highlight-color: transparent;
         box-sizing: border-box;
@@ -172,17 +175,14 @@
         user-select: none;
         white-space: nowrap;
       }
-
       .nice-select:hover {
         border-color: var(--border-color-hover);
       }
-
       .nice-select:active,
       .nice-select.open,
       .nice-select:focus {
         border-color: var(--border-color-active);
       }
-
       .nice-select:after {
         border-bottom: 2px solid var(--select-field-arrow-color);
         border-right: 2px solid var(--select-field-arrow-color);
@@ -204,13 +204,11 @@
         transition: all 0.15s ease-in-out;
         width: 5px;
       }
-
       .nice-select.open:after {
         -webkit-transform: rotate(-135deg);
         -ms-transform: rotate(-135deg);
         transform: rotate(-135deg);
       }
-
       .nice-select.open .list {
         opacity: 1;
         pointer-events: auto;
@@ -218,51 +216,41 @@
         -ms-transform: scale(1) translateY(0);
         transform: scale(1) translateY(0);
       }
-
       .nice-select.disabled {
         border-color: #ededed;
         color: #999;
         pointer-events: none;
       }
-
       .nice-select.disabled:after {
         border-color: #cccccc;
       }
-
       .nice-select.wide {
         width: 100%;
       }
-
       .nice-select.wide .list {
         left: 0 !important;
         right: 0 !important;
       }
-
       .nice-select.right {
         float: right;
       }
-
       .nice-select.right .list {
         left: auto;
         right: 0;
       }
-
       .nice-select.small {
         font-size: 16px;
         height: 36px;
         line-height: 24px;
       }
-
       .nice-select.small:after {
         height: 4px;
         width: 4px;
       }
-
       .nice-select.small .option {
         line-height: 34px;
         min-height: 34px;
       }
-
       .nice-select .list {
         background-color: var(--list-bg-color);
         color: var(--list-text-color);
@@ -293,11 +281,9 @@
           opacity 0.15s ease-out;
         z-index: 9;
       }
-
       .nice-select .list:hover .option:not(:hover) {
         background-color: transparent !important;
       }
-
       .nice-select .option {
         cursor: pointer;
         font-weight: 400;
@@ -311,46 +297,37 @@
         -webkit-transition: all 0.2s;
         transition: all 0.2s;
       }
-
       .nice-select .option:first-child {
         display: none;
       }
-
       span.current {
         color: var(--list-text-color);
       }
-
       .nice-select .option:hover,
       .nice-select .option.focus,
       .nice-select .option.selected.focus {
         background-color: var(--list-item-bg-color);
       }
-
       .nice-select .option.selected {
         font-weight: bold;
       }
-
       .nice-select .option.disabled {
         background-color: transparent;
         color: #999;
         cursor: default;
       }
-
       .no-csspointerevents .nice-select .list {
         display: none;
       }
-
       .no-csspointerevents .nice-select.open .list {
         display: block;
       }
-
       @media only screen and (max-width: 768px) {
         .nice-select .list {
           left: 0px;
         }
       }
     </style>
-
     <!-- Google Tag Manager -->
     <script>
       (function (w, d, s, l, i) {
@@ -378,11 +355,8 @@
       data-duration="400"
       data-doc-height="1"
     >
-      <a href="/" class="homepage w-nav-brand"
-        ><img
-          src="https://uploads-ssl.webflow.com/5d4462a939958fb85d61acc2/62b54e2055d004df685f1c6f_techx_logo.svg"
-          height="22"
-          alt=""
+      <a href="old-home-3.html" class="homepage w-nav-brand"
+        ><img src="images/techx_logo.svg" height="22" alt=""
       /></a>
       <div class="w-embed">
         <style>
@@ -392,15 +366,13 @@
         </style>
       </div>
       <div class="div-block-146">
-        <a
-          href="https://application.univ.ai/login?from=https://my.univ.ai/techx"
-          class="navlink _3-copy w-nav-link"
+        <a href="http://my.univ.ai" class="navlink _3-copy w-nav-link"
           >Register now</a
         >
       </div>
     </div>
     <div class="w-embed w-iframe">
-      <!-- Google Tag Manager (noscript) -->
+      <!--  Google Tag Manager (noscript)  -->
       <noscript
         ><iframe
           src="https://www.googletagmanager.com/ns.html?id=GTM-T5SW79T"
@@ -409,38 +381,38 @@
           style="display: none; visibility: hidden"
         ></iframe
       ></noscript>
-      <!-- End Google Tag Manager (noscript) -->
+      <!--  End Google Tag Manager (noscript)  -->
     </div>
     <div class="black wf-section">
       <div class="custom-container">
         <div class="dspl-hero-section">
           <h2
-            id="w-node-ef1c1c1e-690d-8cae-3d9f-f63958242ac4-01dd2bd1"
+            id="w-node-ef1c1c1e-690d-8cae-3d9f-f63958242ac4-593c93e1"
             class="fellowship-hero-heading-copy"
           >
             LIVE <span class="live-dot">•</span> learning ➝ tech jobs in
             <span class="black-blue">8 weeks*</span><br />
           </h2>
           <div
-            id="w-node-ef1c1c1e-690d-8cae-3d9f-f63958242ac9-01dd2bd1"
+            id="w-node-ef1c1c1e-690d-8cae-3d9f-f63958242ac9-593c93e1"
             class="fellowship-hero-cover"
           >
             <div
-              id="w-node-_86cfa29a-e458-3da4-80f9-ff77d4b79d77-01dd2bd1"
-              style="padding-top: 56.27659574468085%"
+              id="w-node-_86cfa29a-e458-3da4-80f9-ff77d4b79d77-593c93e1"
+              style="padding-top: 56.17021276595745%"
               class="w-video w-embed"
             >
               <iframe
                 class="embedly-embed"
-                src="https://player.vimeo.com/video/725599646?app_id=122963&h=b8386267a8&referrer=https%3A%2F%2Funiv-ai-7dceb7.webflow.io%2F"
+                src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FceFP8qynEC0%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DceFP8qynEC0&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FceFP8qynEC0%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube"
                 scrolling="no"
-                allowfullscreen
-                title="TechX FAQ-1"
+                allowfullscreen=""
+                title="Hands on Learning at TechX.AI"
               ></iframe>
             </div>
           </div>
           <div
-            id="w-node-ef1c1c1e-690d-8cae-3d9f-f63958242acb-01dd2bd1"
+            id="w-node-ef1c1c1e-690d-8cae-3d9f-f63958242acb-593c93e1"
             class="dspl-intro-container"
           >
             <div class="dslp-hero-desc w-richtext">
@@ -464,17 +436,26 @@
     </div>
     <div class="wf-section">
       <div class="div-block-179-copy-copy-copy">
+        <div class="div-block-218">
+          <div style="padding-top: 56.17021276595745%" class="w-video w-embed">
+            <iframe
+              class="embedly-embed"
+              src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FNCoDxnQ0cSg%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DNCoDxnQ0cSg&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FNCoDxnQ0cSg%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube"
+              scrolling="no"
+              allowfullscreen=""
+              title="Get a tech job in as little as 8 weeks."
+            ></iframe>
+          </div>
+        </div>
         <div>
           <h2 class="ghf-features is--black">
             G<span>uided</span>
             <span class="black-blue">hands-on learning</span> with experts
           </h2>
-        </div>
-        <div>
           <p class="ghf-features is-no-padding is--black">
             TechX.AI gets you to code from day 1. You set up your coding
             environment and begin coding right away. You learn LIVE from expert
-            instructors, who get you performing quickly. Lab sessions get you
+            instructors, who get you performing quickly. Lab session get you
             extra practice to sharpen your newly acquired skills.<br /><br />You
             learn fast. If you need to repeat something or an entire course, you
             can just join in again with the next batch.
@@ -482,8 +463,8 @@
           <div class="div-block-186-copy">
             <div class="div-block-187">
               <a
-                id="w-node-_10af3c9b-86ed-accf-9730-9f4a284cdfba-01dd2bd1"
-                href="https://application.univ.ai/login?from=https://my.univ.ai/techx"
+                id="w-node-_10af3c9b-86ed-accf-9730-9f4a284cdfba-593c93e1"
+                href="http://my.univ.ai"
                 target="_blank"
                 class="button-black-5 w-button"
                 >Register now</a
@@ -502,24 +483,25 @@
           </p>
           <div class="_3-column-grid tracks">
             <div
-              id="w-node-b37e92e9-a14f-ee62-e497-6e296862c5a0-01dd2bd1"
-              class="div-block-192"
+              id="w-node-_18dfcdeb-db81-6c24-d1e8-4e24777dacfd-593c93e1"
+              class="div-block-192 last"
             >
               <h5 class="award-title-2">Pre-Python</h5>
               <div class="w-richtext">
                 <p>
                   If you have zero programming experience then start with this
                   course.
-                  <br /><br />5 days a week, 1 course, 2 weeks<br />Starting
-                  October 3rd, 2022
                 </p>
+                <p>‍</p>
+                <p>5 days a week, 1 course, 2 weeks<strong>‍</strong></p>
+                <p>Starting October 3rd, 2022</p>
               </div>
               <div class="div-block-186-copy">
                 <div class="div-block-187">
                   <a
-                    href="https://application.univ.ai/login?from=https://my.univ.ai/techx"
+                    id="w-node-_18dfcdeb-db81-6c24-d1e8-4e24777dad0b-593c93e1"
+                    href="http://my.univ.ai"
                     target="_blank"
-                    id="w-node-b37e92e9-a14f-ee62-e497-6e296862c5ae-01dd2bd1"
                     class="button-black-5 w-button"
                     >Register now</a
                   >
@@ -527,7 +509,7 @@
               </div>
             </div>
             <div
-              id="w-node-b37e92e9-a14f-ee62-e497-6e296862c5a0-01dd2bd1"
+              id="w-node-b37e92e9-a14f-ee62-e497-6e296862c5a0-593c93e1"
               class="div-block-192"
             >
               <h5 class="award-title-2">Python Programmer</h5>
@@ -541,9 +523,9 @@
               <div class="div-block-186-copy">
                 <div class="div-block-187">
                   <a
-                    href="https://application.univ.ai/login?from=https://my.univ.ai/techx"
+                    href="http://my.univ.ai"
                     target="_blank"
-                    id="w-node-b37e92e9-a14f-ee62-e497-6e296862c5ae-01dd2bd1"
+                    id="w-node-b37e92e9-a14f-ee62-e497-6e296862c5ae-593c93e1"
                     class="button-black-5 w-button"
                     >Register now</a
                   >
@@ -551,7 +533,7 @@
               </div>
             </div>
             <div
-              id="w-node-b37e92e9-a14f-ee62-e497-6e296862c5b3-01dd2bd1"
+              id="w-node-b37e92e9-a14f-ee62-e497-6e296862c5b3-593c93e1"
               class="div-block-192 last"
             >
               <h5 class="award-title-2">Data/Statistical Analyst</h5>
@@ -565,8 +547,8 @@
               <div class="div-block-186-copy">
                 <div class="div-block-187">
                   <a
-                    id="w-node-b37e92e9-a14f-ee62-e497-6e296862c5c0-01dd2bd1"
-                    href="https://application.univ.ai/login?from=https://my.univ.ai/techx"
+                    id="w-node-b37e92e9-a14f-ee62-e497-6e296862c5c0-593c93e1"
+                    href="http://my.univ.ai"
                     target="_blank"
                     class="button-black-5 w-button"
                     >Register now</a
@@ -580,12 +562,122 @@
     </div>
     <div class="wf-section">
       <div class="custom-container">
+        <div class="three-column-grid-wrapper">
+          <h2 class="jury-members-headline">Jury Members</h2>
+          <div class="_3-column-grid idsai-jury">
+            <div>
+              <div class="jury-image-wrapper">
+                <img
+                  src="images/Afreen-Khan.jpg"
+                  loading="lazy"
+                  srcset="
+                    images/Afreen-Khan-p-500.jpg   500w,
+                    images/Afreen-Khan-p-800.jpg   800w,
+                    images/Afreen-Khan-p-1080.jpg 1080w,
+                    images/Afreen-Khan.jpg        1332w
+                  "
+                  sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 46vw, (max-width: 1279px) 42vw, (max-width: 1919px) 28vw, 21vw"
+                  alt=""
+                  class="webinar-image"
+                />
+              </div>
+              <h5 class="jury-name">Dr. Afreen Khan</h5>
+              <p class="jury-title">
+                Assistant Professor (Integral University)
+              </p>
+            </div>
+            <div>
+              <div class="jury-image-wrapper">
+                <img
+                  src="images/Swathi.jpg"
+                  loading="lazy"
+                  srcset="
+                    images/Swathi-p-500.jpg   500w,
+                    images/Swathi-p-800.jpg   800w,
+                    images/Swathi-p-1080.jpg 1080w,
+                    images/Swathi.jpg        1332w
+                  "
+                  sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 46vw, (max-width: 1279px) 42vw, (max-width: 1919px) 28vw, 21vw"
+                  alt=""
+                  class="webinar-image"
+                />
+              </div>
+              <h5 class="jury-name">Swati Tripathi</h5>
+              <p class="jury-title">IIIT Lucknow - (PGD-Data Science)</p>
+            </div>
+            <div>
+              <div class="jury-image-wrapper">
+                <img
+                  src="images/Sahana.jpg"
+                  loading="lazy"
+                  srcset="
+                    images/Sahana-p-500.jpg   500w,
+                    images/Sahana-p-800.jpg   800w,
+                    images/Sahana-p-1080.jpg 1080w,
+                    images/Sahana.jpg        1332w
+                  "
+                  sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 46vw, (max-width: 1279px) 42vw, (max-width: 1919px) 28vw, 21vw"
+                  alt=""
+                  class="webinar-image"
+                />
+              </div>
+              <h5 class="jury-name">Dr. Sahana Prasad</h5>
+              <p class="jury-title">
+                Adjunct Faculty - Data Science (NMKRV college)
+              </p>
+            </div>
+            <div>
+              <div class="jury-image-wrapper">
+                <img
+                  src="images/Milan.jpg"
+                  loading="lazy"
+                  srcset="
+                    images/Milan-p-500.jpg   500w,
+                    images/Milan-p-800.jpg   800w,
+                    images/Milan-p-1080.jpg 1080w,
+                    images/Milan.jpg        1332w
+                  "
+                  sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 46vw, (max-width: 1279px) 42vw, (max-width: 1919px) 28vw, 21vw"
+                  alt=""
+                  class="webinar-image"
+                />
+              </div>
+              <h5 class="jury-name">Milan Amrutkumar Joshi</h5>
+              <p class="jury-title">
+                Lead Machine Learning (Climate Connect Digital)
+              </p>
+            </div>
+            <div>
+              <div class="jury-image-wrapper">
+                <img
+                  src="images/Ankit-Jha.jpg"
+                  loading="lazy"
+                  srcset="
+                    images/Ankit-Jha-p-500.jpg   500w,
+                    images/Ankit-Jha-p-800.jpg   800w,
+                    images/Ankit-Jha-p-1080.jpg 1080w,
+                    images/Ankit-Jha.jpg        1332w
+                  "
+                  sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 46vw, (max-width: 1279px) 42vw, (max-width: 1919px) 28vw, 21vw"
+                  alt=""
+                  class="webinar-image"
+                />
+              </div>
+              <h5 class="jury-name">Ankit Jha</h5>
+              <p class="jury-title">Data Science Associate (ZS)<br /></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wf-section">
+      <div class="custom-container">
         <div class="div-block-211">
-          <h2 id="w-node-acd12de8-a2f7-858c-f781-f49a22d9c4a3-01dd2bd1">
+          <h2 id="w-node-acd12de8-a2f7-858c-f781-f49a22d9c4a3-593c93e1">
             Prepare for Jobs
           </h2>
           <div
-            id="w-node-acd12de8-a2f7-858c-f781-f49a22d9c4aa-01dd2bd1"
+            id="w-node-acd12de8-a2f7-858c-f781-f49a22d9c4aa-593c93e1"
             class="div-block-180"
           >
             <h5 class="blue">Communication skills</h5>
@@ -601,10 +693,10 @@
             <h5 class="blue">Problem Solving</h5>
           </div>
           <div
-            id="w-node-_95c59bd7-07da-c034-cb00-001015ecf88e-01dd2bd1"
+            id="w-node-_95c59bd7-07da-c034-cb00-001015ecf88e-593c93e1"
             class="div-block-185-copy"
           >
-            <div id="w-node-_95c59bd7-07da-c034-cb00-001015ecf88f-01dd2bd1">
+            <div id="w-node-_95c59bd7-07da-c034-cb00-001015ecf88f-593c93e1">
               <p class="paragraph-75">
                 TechX.AI features a Career Development series via which we
                 prepare you with soft skills required for success in interviews.
@@ -619,7 +711,7 @@
                 <div class="div-block-187">
                   <a
                     id="w-node-_9ea38d18-7141-3244-f1c8-dc41c16c634c-c16c634c"
-                    href="https://application.univ.ai/login?from=https://my.univ.ai/techx"
+                    href="http://my.univ.ai"
                     target="_blank"
                     class="button-black w-button"
                     >Register here</a
@@ -634,15 +726,15 @@
     <div class="wf-section">
       <div>
         <div class="three-column-grid-wrapper variant-copy">
-          <h2 class="program-track-headline-copy">Coming Soon</h2>
+          <h2 class="program-track-headline-copy">Upcoming Courses</h2>
           <div class="_3-column-grid tracks">
-            <div id="w-node-_80be7f5d-8620-c85f-10dc-4bd1fb25f6c6-01dd2bd1">
+            <div id="w-node-_80be7f5d-8620-c85f-10dc-4bd1fb25f6c6-593c93e1">
               <div class="w-richtext">
-                <strong
-                  ><ul role="list">
+                <strong>
+                  <ul role="list">
                     Skills augmentation
-                  </ul></strong
-                >
+                  </ul>
+                </strong>
                 <ul role="list">
                   <li>Python Pro (Job track: Python Programmer)</li>
                   <li>
@@ -651,7 +743,7 @@
                 </ul>
               </div>
             </div>
-            <div id="w-node-_2091bec0-5320-507f-6d8b-d7a821aa31d5-01dd2bd1">
+            <div id="w-node-_2091bec0-5320-507f-6d8b-d7a821aa31d5-593c93e1">
               <h5 class="award-title-2 red"></h5>
               <div class="comingsoonghf w-richtext">
                 <p>New Job Tracks</p>
@@ -670,17 +762,6 @@
               </div>
             </div>
           </div>
-          <div class="div-block-185 variant">
-            <div>
-              <a
-                href="https://application.univ.ai/login?from=https://my.univ.ai/techx"
-                target="_blank"
-                id="w-node-_80be7f5d-8620-c85f-10dc-4bd1fb25f6d5-01dd2bd1"
-                class="button-black-5 w-button"
-                >Register now</a
-              >
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -690,21 +771,21 @@
           <h2>
             Get a tech job in as little as <span class="blue">8 weeks.</span>
           </h2>
-          <div id="w-node-_5f27df9d-0394-224a-d9ac-b4218800a099-01dd2bd1">
+          <div id="w-node-_5f27df9d-0394-224a-d9ac-b4218800a099-593c93e1">
             <img
-              src="https://uploads-ssl.webflow.com/5d4462a939958fb85d61acc2/616d0cfbe569df764d27e8cb_Mask%20Group-1_compressed.jpg"
+              src="images/Mask-Group-1_compressed.jpg"
               loading="lazy"
-              sizes="(max-width: 479px) 93vw, (max-width: 991px) 94vw, (max-width: 1279px) 42vw, (max-width: 1439px) 43vw, 44vw"
-              id="w-node-_5f27df9d-0394-224a-d9ac-b4218800a09a-01dd2bd1"
               srcset="
-                https://uploads-ssl.webflow.com/5d4462a939958fb85d61acc2/616d0cfbe569df764d27e8cb_Mask%20Group-1_compressed-p-800.jpeg   800w,
-                https://uploads-ssl.webflow.com/5d4462a939958fb85d61acc2/616d0cfbe569df764d27e8cb_Mask%20Group-1_compressed-p-1080.jpeg 1080w,
-                https://uploads-ssl.webflow.com/5d4462a939958fb85d61acc2/616d0cfbe569df764d27e8cb_Mask%20Group-1_compressed.jpg         1200w
+                images/Mask-Group-1_compressed-p-800.jpeg   800w,
+                images/Mask-Group-1_compressed-p-1080.jpeg 1080w,
+                images/Mask-Group-1_compressed.jpg         1200w
               "
+              id="w-node-_5f27df9d-0394-224a-d9ac-b4218800a09a-593c93e1"
+              sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 95vw, (max-width: 1279px) 42vw, (max-width: 1439px) 43vw, 44vw"
               alt=""
             />
           </div>
-          <p id="w-node-_5f27df9d-0394-224a-d9ac-b4218800a095-01dd2bd1">
+          <p id="w-node-_5f27df9d-0394-224a-d9ac-b4218800a095-593c93e1">
             TechX.AI is designed to get you started on a tech-career
             irrespective of your prior background. You can take assessment tests
             and hackathons on the GHF platform to measure your progress and
@@ -717,11 +798,11 @@
     <div class="wf-section">
       <div class="custom-container">
         <div class="div-block-211">
-          <h2 id="w-node-_48011937-9b69-3063-2ed2-a7dfb76c5cd9-01dd2bd1">
+          <h2 id="w-node-_48011937-9b69-3063-2ed2-a7dfb76c5cd9-593c93e1">
             Payment plan
           </h2>
           <div
-            id="w-node-_48011937-9b69-3063-2ed2-a7dfb76c5cdd-01dd2bd1"
+            id="w-node-_48011937-9b69-3063-2ed2-a7dfb76c5cdd-593c93e1"
             class="div-block-180"
           >
             <h5 class="blue">Affordable Subscriptions</h5>
@@ -731,16 +812,16 @@
             <h5 class="blue">Continuous Learning</h5>
           </div>
           <div
-            id="w-node-_48011937-9b69-3063-2ed2-a7dfb76c5ce6-01dd2bd1"
+            id="w-node-_48011937-9b69-3063-2ed2-a7dfb76c5ce6-593c93e1"
             class="div-block-185-copy"
           >
-            <div id="w-node-_48011937-9b69-3063-2ed2-a7dfb76c5ce7-01dd2bd1">
+            <div id="w-node-_48011937-9b69-3063-2ed2-a7dfb76c5ce7-593c93e1">
               <p class="paragraph-75">
-                At TechX.AI you start via a modest
-                <strong>half-yearly or annual subscription.</strong> You can
-                also opt for the ala carte pricing model for each program. You
-                can repeat LIVE core courses and labs as often as you need - to
-                perfect your skills. After you start a job, you can continuously
+                At TechX.AI you star via a modest
+                <strong>monthly or annual subscription</strong>. You can also
+                opt for the ala carte pricing model for each program. You can
+                repeat LIVE core courses and labs as often as you need - to
+                perfect your skills. After you start a job, you continuously
                 upskill to advance your career. With affordable subscription
                 plans, TechX.AI will support you throughout your career.
               </p>
@@ -748,7 +829,7 @@
                 <div class="div-block-187">
                   <a
                     id="w-node-_9ea38d18-7141-3244-f1c8-dc41c16c634c-c16c634c"
-                    href="https://application.univ.ai/login?from=https://my.univ.ai/techx"
+                    href="http://my.univ.ai"
                     target="_blank"
                     class="button-black w-button"
                     >Register now</a
@@ -760,20 +841,351 @@
         </div>
       </div>
     </div>
+    <div class="div-block-219">
+      <div class="div-block-220">
+        <div class="div-block-222">
+          <h5>Stand Alone</h5>
+        </div>
+        <div class="line endtoend"></div>
+        <p>You can also take any program or course on stand-alone basis</p>
+        <div class="div-block-187-copy">
+          <a
+            id="w-node-_9ea38d18-7141-3244-f1c8-dc41c16c634c-c16c634c"
+            href="http://my.univ.ai"
+            target="_blank"
+            class="button-black w-button"
+            >Buy now</a
+          >
+        </div>
+      </div>
+      <div class="div-block-220-copy">
+        <div class="blue"><strong>Recommended</strong></div>
+        <div class="div-block-222">
+          <h5>Yearly Subscription</h5>
+        </div>
+        <div class="line endtoend"></div>
+        <div class="div-block-221">
+          <h4 class="strike">₹18,000</h4>
+          <h4 class="blue">₹12,000</h4>
+        </div>
+        <p>Access to all previous and upcoming programs and courses</p>
+        <div class="div-block-187-copy">
+          <a
+            id="w-node-_9ea38d18-7141-3244-f1c8-dc41c16c634c-c16c634c"
+            href="http://my.univ.ai"
+            target="_blank"
+            class="button-black w-button"
+            >Buy now</a
+          >
+        </div>
+      </div>
+      <div class="div-block-220">
+        <div class="div-block-222">
+          <h5>Half yearly Subscription</h5>
+        </div>
+        <div class="line endtoend"></div>
+        <div class="div-block-221">
+          <h4 class="strike">₹12,000</h4>
+          <h4 class="blue">₹8,000</h4>
+        </div>
+        <p>Access to all previous and upcoming programs and courses</p>
+        <div class="div-block-187-copy">
+          <a
+            id="w-node-_9ea38d18-7141-3244-f1c8-dc41c16c634c-c16c634c"
+            href="http://my.univ.ai"
+            target="_blank"
+            class="button-black w-button"
+            >Buy now</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="wf-section">
+      <div class="facult-wrapper">
+        <div class="w-embed">
+          <style>
+            .student-story-img {
+              aspect-ratio: 16/9;
+            }
+          </style>
+        </div>
+        <h2 class="student-stories-headline">
+          Meet the DSLP Fellowship Cohort
+        </h2>
+        <div class="w-embed">
+          <style>
+            html,
+            body {
+              overflow-x: hidden;
+            }
+            body {
+              position: relative;
+            }
+          </style>
+        </div>
+        <div class="div-block-215">
+          <div
+            data-delay="4000"
+            data-animation="slide"
+            class="student-stories-slider home w-slider"
+            data-autoplay="false"
+            data-easing="ease-in-out-quad"
+            data-hide-arrows="false"
+            data-disable-swipe="false"
+            data-autoplay-limit="0"
+            data-nav-spacing="3"
+            data-duration="500"
+            data-infinite="true"
+          >
+            <div class="student-stories-mask w-slider-mask">
+              <div class="student-story w-slide">
+                <div>
+                  <img
+                    src="images/Rohan.jpg"
+                    loading="lazy"
+                    srcset="
+                      images/Rohan-p-500.jpg   500w,
+                      images/Rohan-p-800.jpg   800w,
+                      images/Rohan-p-1080.jpg 1080w,
+                      images/Rohan.jpg        1332w
+                    "
+                    sizes="(max-width: 767px) 87vw, (max-width: 991px) 61vw, 35vw"
+                    alt=""
+                  />
+                  <h5 class="student-name">Rohan Chothawe</h5>
+                  <p class="student-whereabout">
+                    B.Sc-Global Executive Search Professional
+                  </p>
+                  <p class="student-quote">
+                    “The Pre-Python content and sessions are quite helpful for
+                    anyone who would like to start from the basics. The module
+                    is quite fluid and easy to understand.”
+                  </p>
+                </div>
+              </div>
+              <div class="student-story w-slide">
+                <div>
+                  <img
+                    src="images/Aswin.jpg"
+                    loading="lazy"
+                    srcset="
+                      images/Aswin-p-500.jpg   500w,
+                      images/Aswin-p-800.jpg   800w,
+                      images/Aswin-p-1080.jpg 1080w,
+                      images/Aswin.jpg        1332w
+                    "
+                    sizes="(max-width: 767px) 87vw, (max-width: 991px) 61vw, 35vw"
+                    alt=""
+                  />
+                  <h5 class="student-name">Aswin Giri J:</h5>
+                  <p class="student-whereabout">PhD-IIT Madras</p>
+                  <p class="student-quote">
+                    “The course is superb for learning the fundamentals. The
+                    exercises were challenging and doable. Fundamentals were
+                    taught clearly.”
+                  </p>
+                </div>
+              </div>
+              <div class="student-story w-slide">
+                <div>
+                  <img
+                    src="images/kevin.jpg"
+                    loading="lazy"
+                    srcset="
+                      images/kevin-p-500.jpg   500w,
+                      images/kevin-p-800.jpg   800w,
+                      images/kevin-p-1080.jpg 1080w,
+                      images/kevin.jpg        1332w
+                    "
+                    sizes="(max-width: 767px) 87vw, (max-width: 991px) 61vw, 35vw"
+                    alt=""
+                  />
+                  <h5 class="student-name">Korat Kelvin B.</h5>
+                  <p class="student-whereabout">B.Tech-GEC Gandhinagar</p>
+                  <p class="student-quote">
+                    “I was at python beginner level before starting the course
+                    and this course brushed up my concepts. The course gave me a
+                    very beautiful experience of python.”
+                  </p>
+                </div>
+              </div>
+              <div class="student-story w-slide">
+                <div>
+                  <img
+                    src="images/Jatin.jpg"
+                    loading="lazy"
+                    srcset="
+                      images/Jatin-p-500.jpg   500w,
+                      images/Jatin-p-800.jpg   800w,
+                      images/Jatin-p-1080.jpg 1080w,
+                      images/Jatin.jpg        1332w
+                    "
+                    sizes="(max-width: 767px) 87vw, (max-width: 991px) 61vw, 35vw"
+                    alt=""
+                  />
+                  <h5 class="student-name">Jatin Sharma</h5>
+                  <p class="student-whereabout">PhD-DTU</p>
+                  <p class="student-quote">
+                    “My experience was full of knowledge. Every Teaching
+                    assistant and faculty have put in a lot of effort into
+                    explaining each and every question we ask. This course has
+                    helped me to be on the programming track with a lot of
+                    enthusiasm”
+                  </p>
+                </div>
+              </div>
+              <div class="student-story w-slide">
+                <div>
+                  <img
+                    src="images/sheikh.jpg"
+                    loading="lazy"
+                    srcset="
+                      images/sheikh-p-500.jpg   500w,
+                      images/sheikh-p-800.jpg   800w,
+                      images/sheikh-p-1080.jpg 1080w,
+                      images/sheikh.jpg        1332w
+                    "
+                    sizes="(max-width: 767px) 87vw, (max-width: 991px) 61vw, 35vw"
+                    alt=""
+                  />
+                  <h5 class="student-name">Sheikh Saidee</h5>
+                  <p class="student-whereabout">MCA-University Of Kashmir</p>
+                  <p class="student-quote">
+                    “In my last course, I didn&#x27;t complete the course due to
+                    some time issues. Now I was trying to learn the complete
+                    basics and this platform provided that. Thank&#x27;s a lot
+                    for building such a platform.”
+                  </p>
+                </div>
+              </div>
+              <div class="student-story w-slide">
+                <div>
+                  <img
+                    src="images/Deepak.jpg"
+                    loading="lazy"
+                    srcset="
+                      images/Deepak-p-500.jpg   500w,
+                      images/Deepak-p-800.jpg   800w,
+                      images/Deepak-p-1080.jpg 1080w,
+                      images/Deepak.jpg        1332w
+                    "
+                    sizes="(max-width: 767px) 87vw, (max-width: 991px) 61vw, 35vw"
+                    alt=""
+                  />
+                  <h5 class="student-name">Deepak G</h5>
+                  <p class="student-whereabout">B.Tech-PTU</p>
+                  <p class="student-quote">
+                    “The guidance that the coordinators provide is very
+                    supportive and to be precise they guided us through each and
+                    every step of the session which made us understand the
+                    concepts clearly.”
+                  </p>
+                </div>
+              </div>
+              <div class="student-story w-slide">
+                <div>
+                  <img
+                    src="images/Keshav.jpg"
+                    loading="lazy"
+                    srcset="
+                      images/Keshav-p-500.jpg   500w,
+                      images/Keshav-p-800.jpg   800w,
+                      images/Keshav-p-1080.jpg 1080w,
+                      images/Keshav.jpg        1332w
+                    "
+                    sizes="(max-width: 767px) 87vw, (max-width: 991px) 61vw, 35vw"
+                    alt=""
+                    class="student-story-img"
+                  />
+                  <h5 class="student-name">Keshav Agrawal</h5>
+                  <p class="student-whereabout">B.Tech-IIST</p>
+                  <p class="student-quote">
+                    “What intrigued me the most was the teaching approach which
+                    involves problem-solving for hands-on learning.”
+                  </p>
+                </div>
+              </div>
+              <div class="student-story w-slide">
+                <div>
+                  <img
+                    src="images/Manav.jpg"
+                    loading="lazy"
+                    srcset="
+                      images/Manav-p-500.jpg   500w,
+                      images/Manav-p-800.jpg   800w,
+                      images/Manav-p-1080.jpg 1080w,
+                      images/Manav.jpg        1332w
+                    "
+                    sizes="(max-width: 767px) 87vw, (max-width: 991px) 61vw, 35vw"
+                    alt=""
+                  />
+                  <h5 class="student-name">Manav Shah</h5>
+                  <p class="student-whereabout">M.Sc-HSNC UNIVERSITY</p>
+                  <p class="student-quote">
+                    “What I liked most about the course was the way in which
+                    each topic was covered in-depth, and also the patience of
+                    instructors!”
+                  </p>
+                </div>
+              </div>
+              <div class="student-story w-slide">
+                <div>
+                  <img
+                    src="images/SAurabh.jpg"
+                    loading="lazy"
+                    srcset="
+                      images/SAurabh-p-500.jpg   500w,
+                      images/SAurabh-p-800.jpg   800w,
+                      images/SAurabh-p-1080.jpg 1080w,
+                      images/SAurabh.jpg        1332w
+                    "
+                    sizes="(max-width: 767px) 87vw, (max-width: 991px) 61vw, 35vw"
+                    alt=""
+                  />
+                  <h5 class="student-name">Saurabh Kumar</h5>
+                  <p class="student-whereabout">B.Tech-Roorkee</p>
+                  <p class="student-quote">
+                    “Interactive classes, good content and lab sessions backed
+                    with real-life problems demonstration are what I like most
+                    about the course!”
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="left-arrow-11 w-slider-arrow-left">
+              <img
+                src="images/Black-arrow-left.svg"
+                loading="lazy"
+                alt="Move left"
+                class="image-55"
+              />
+            </div>
+            <div class="right-arrow-10 icon-16 w-slider-arrow-right">
+              <img
+                src="images/Black-arrow-right.svg"
+                loading="lazy"
+                alt="Move right"
+              />
+            </div>
+            <div class="slide-nav-11 w-slider-nav w-round"></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div
-      itemscope="itemscope"
       itemtype="https://schema.org/FAQPage"
+      itemscope="itemscope"
       class="wf-section"
     >
       <div id="enquire" class="request-information">
         <h2
-          id="w-node-_3f6d3157-904a-3962-9576-985d94d953c1-01dd2bd1"
+          id="w-node-_3f6d3157-904a-3962-9576-985d94d953c1-593c93e1"
           class="form-headline landing-page"
         >
           Download Brochure
         </h2>
         <div
-          id="w-node-_3f6d3157-904a-3962-9576-985d94d953c3-01dd2bd1"
+          id="w-node-_3f6d3157-904a-3962-9576-985d94d953c3-593c93e1"
           class="request-info w-form"
         >
           <form
@@ -905,8 +1317,8 @@
               <option value="Python libraries like Tensorflow &amp; Keras">
                 Python libraries like Tensorflow &amp; Keras
               </option></select
-            ><label class="w-checkbox checkbox-field-2"
-              ><div
+            ><label class="w-checkbox checkbox-field-2">
+              <div
                 class="w-checkbox-input w-checkbox-input--inputType-custom checkbox-2"
               ></div>
               <input
@@ -915,14 +1327,14 @@
                 id="checkbox"
                 data-name="Checkbox"
                 required=""
-                style="opacity: 0; position: absolute; z-index: -1" /><span
-                class="caption form-white w-form-label"
-                for="checkbox"
+                style="opacity: 0; position: absolute; z-index: -1"
+              /><span class="caption form-white w-form-label" for="checkbox"
                 >I agree and authorise Univ.AI and its representatives to Call,
                 SMS, Email or WhatsApp me about its programmes and offers. This
                 consent overrides any registration for DNC / NDNC.
-                <a href="/privacy-policy" class="link-8">Privacy Policy</a
-                ><br /></span></label
+                <a href="privacy-policy.html" class="link-8">Privacy Policy</a
+                ><br
+              /></span> </label
             ><input
               type="submit"
               value="Submit"
@@ -948,13 +1360,13 @@
       <div class="custom-container">
         <div class="footer-grid tech-x">
           <div
-            id="w-node-_0b6a159a-bd16-1b80-4c23-da0abb1bb0d8-01dd2bd1"
+            id="w-node-_0b6a159a-bd16-1b80-4c23-da0abb1bb0d8-593c93e1"
             class="html-embed-17 w-embed"
           >
             <svg
               width="auto"
               height="auto"
-              viewBox="0 0 743 110"
+              viewbox="0 0 743 110"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -963,79 +1375,77 @@
                   opacity="0.98"
                   d="M576.82 94.0361H591.519V108.735H576.82V94.0361Z"
                   fill="CurrentColor"
-                />
+                ></path>
                 <g opacity="0.98">
                   <path
                     opacity="0.98"
                     d="M690.802 88.3563H638.693L629.96 108.735H613.658L656.597 8.73535H672.899L715.841 108.735H699.535L690.802 88.3563ZM685.127 75.1107L664.748 27.6581L644.369 75.1107H685.127Z"
                     fill="CurrentColor"
-                  />
+                  ></path>
                   <path
                     opacity="0.98"
                     d="M727.947 8.73535H742.647V108.735H727.947V8.73535Z"
                     fill="CurrentColor"
-                  />
+                  ></path>
                 </g>
                 <path
                   opacity="0.98"
                   d="M176.844 22.4129H144.089V8.73511H224.444V22.4129H191.541V108.735H176.844V22.4129Z"
                   fill="CurrentColor"
-                />
+                ></path>
                 <path
                   opacity="0.98"
                   d="M279.257 89.5202L288.282 98.8352C281.586 105.964 268.484 110.479 257.86 110.479C236.901 110.479 219.148 94.0296 219.148 70.8902C219.148 48.3316 235.882 31.7341 256.698 31.7341C279.696 31.7341 292.939 49.2027 292.939 76.1284H233.701C235.592 88.6432 244.764 97.6679 257.718 97.6679C265.575 97.6678 274.748 94.1777 279.257 89.5202ZM233.85 64.6328H278.967C277.367 52.9891 270.232 44.5452 257.279 44.5452C245.635 44.5452 236.178 52.4025 233.85 64.6328Z"
                   fill="CurrentColor"
-                />
+                ></path>
                 <path
                   opacity="0.98"
                   d="M303.198 71.0325C303.198 49.6412 321.389 31.7341 342.929 31.7341C348.078 31.7572 353.172 32.7978 357.918 34.796C362.664 36.7943 366.968 39.7107 370.583 43.3779L360.83 52.4025C358.569 49.8467 355.791 47.7991 352.681 46.3947C349.571 44.9903 346.199 44.261 342.786 44.2548C329.104 44.2548 317.751 56.4793 317.751 71.0325C317.751 85.7338 329.104 97.9582 342.929 97.9582C346.407 97.9179 349.837 97.1458 352.997 95.692C356.157 94.2382 358.975 92.1353 361.268 89.5202L371.022 98.3967C367.374 102.211 362.992 105.248 358.139 107.325C353.287 109.401 348.064 110.474 342.786 110.479C321.389 110.479 303.198 92.4297 303.198 71.0325Z"
                   fill="CurrentColor"
-                />
+                ></path>
                 <path
                   opacity="0.98"
                   d="M450.91 60.8515V108.736H436.79V63.3224C436.79 52.1172 429.655 44.2599 419.469 44.2599C408.116 44.2599 398.659 52.2653 398.659 62.0129V108.736H384.39V7H398.659V44.6925C403.168 37.1256 412.335 31.7392 422.669 31.7392C439.267 31.7392 450.91 43.8214 450.91 60.8515Z"
                   fill="CurrentColor"
-                />
+                ></path>
                 <path
                   opacity="0.98"
                   d="M518.917 58.6581L556.614 108.735H538.711L509.891 70.4514L481.066 108.735H463.453L501.156 58.8063L463.453 8.73511H481.214L510.033 47.0189L539.001 8.73511H556.614L518.917 58.6581Z"
                   fill="CurrentColor"
-                />
+                ></path>
                 <path
                   d="M40 68.7354H0V108.735H40V68.7354Z"
                   fill="CurrentColor"
-                />
+                ></path>
                 <path
                   d="M40 23.7354H0V63.7353H40V23.7354Z"
                   fill="CurrentColor"
-                />
+                ></path>
                 <path
                   d="M85 68.7354H45V108.735H85V68.7354Z"
                   fill="CurrentColor"
-                />
+                ></path>
                 <path
                   d="M100 8.73535L60.0001 8.73535V48.7353H100V8.73535Z"
                   fill="CurrentColor"
-                />
+                ></path>
               </g>
               <defs>
-                <clipPath id="clip0_849_14999">
-                  <rect width="743" height="110" fill="CurrentColor" />
-                </clipPath>
+                <clippath id="clip0_849_14999">
+                  <rect width="743" height="110" fill="CurrentColor"></rect>
+                </clippath>
               </defs>
             </svg>
           </div>
           <div
-            id="w-node-_376e15d0-3929-299d-8343-39d45e4f829c-01dd2bd1"
+            id="w-node-_376e15d0-3929-299d-8343-39d45e4f829c-593c93e1"
             class="html-embed w-embed w-script"
           >
             <div class="copyright">
               © Copyright
               <script language="javascript" type="text/javascript">
                 var today = new Date();
-
                 var year = today.getFullYear();
-
                 document.write(year);
               </script>
               Univ.AI All rights Reseved
@@ -1050,17 +1460,11 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://uploads-ssl.webflow.com/5d4462a939958fb85d61acc2/js/webflow.1488e8ef9.js"
-      type="text/javascript"
-    ></script>
-    <!--[if lte IE 9
-      ]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script
-    ><![endif]-->
+    <script src="js/webflow.js" type="text/javascript"></script>
+    <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
     <script>
       $("#country-code").val("+91");
     </script>
-
     <script
       src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"
       data-cfasync="false"
@@ -1084,29 +1488,96 @@
         },
       });
     </script>
-
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const myParam = urlParams.get("ref");
+      document.cookie = "ref=" + myParam + "; domain=univ.ai; max-age = 604800";
+    </script>
+    <script>
+      function getParam(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null
+          ? ""
+          : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+      var Webflow = Webflow || [];
+      Webflow.push(function () {
+        $("#code").val(getParam("ref"));
+      });
+    </script>
+    <script>
+      let intr = document.getElementsByClassName("int");
+      let ind = document.getElementsByClassName("inr");
+      let country = sessionStorage.getItem("country");
+      const api_url = "https://course.univ.ai/cc/";
+      //Get user location
+      async function getLocation() {
+        const response = await fetch(api_url);
+        const data = await response.json();
+        country = data.cc;
+        sessionStorage.setItem("country", country);
+        remove(country);
+      }
+      //Remove objects
+      function remove(country) {
+        if (country == "IN") {
+          for (var i = 0; i < intr.length; i++) {
+            intr[i].style.display = "none";
+          }
+          for (var i = 0; i < ind.length; i++) {
+            ind[i].style.display = "block";
+            console.log("it is india");
+          }
+        } else {
+          for (var i = 0; i < intr.length; i++) {
+            intr[i].style.display = "block";
+          }
+          for (var i = 0; i < ind.length; i++) {
+            ind[i].style.display = "none";
+          }
+          console.log("it is international");
+        }
+      }
+      //Check for country
+      if (country == null) {
+        getLocation();
+      } else {
+        remove(country);
+      }
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#wf-form-Subscription").submit(function () {
+          window.open(
+            "https://drive.google.com/uc?export=download&id=1O0FksyQUKr8uq7XYpP9dzS2Avylz7zUy",
+            "_blank"
+          );
+        });
+      });
+    </script>
+    <!--  CUSTOM SELECT FIELD  -->
+    <script>
+      function SetProspectID() {
+        if (typeof MXCProspectId !== "undefined")
+          jQuery('input[name="ProspectID"]').attr("value", MXCProspectId);
+      }
+      window.onload = function () {
+        setTimeout(SetProspectID, 2000);
+      };
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
     <script>
       $(document).ready(function () {
         $("select").niceSelect();
       });
     </script>
-
     <script>
       $("#Country-Code").val("+91");
       $("#country").val("India");
     </script>
     <script src="https://cdn.finsweet.com/files/sweet-text/richtext-stylesystem-v1.0.min.js"></script>
     <script src="https://gwip38.csb.app/script.js"></script>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-T3LF6HD"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
   </body>
 </html>
