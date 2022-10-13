@@ -11522,6 +11522,10 @@ figcaption {
   margin-bottom: 160px;
 }
 
+.faculty-designation.techx {
+  margin-bottom: 0px;
+}
+
 .icon-16 {
   display: -webkit-box;
   display: -webkit-flex;
